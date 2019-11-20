@@ -11,7 +11,7 @@ except (ImportError, IOError):
 
 setup(
     name='stopword',
-    version='0.0.2',
+    version='0.0.13',
     description=(
         'Stopwords filter for Chinese'
     ),
@@ -21,7 +21,7 @@ setup(
     license='MIT',
     packages=find_packages(),
     package_data={'stopword': ['*.txt']},
-    #data_files=[('stopword', ['stopword/stopwords-cn.txt'])],
+    #data_files=[('stopword', ['stopword/stopwords.txt'])],
     platforms=["all"],
     url='https://github.com/tauriel27/stopword',
     classifiers=[

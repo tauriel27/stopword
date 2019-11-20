@@ -1,9 +1,9 @@
-__version__='0.0.1'
-__name__='stopword'
+import os
 
+module_path = os.path.dirname(__file__)
 def _read_stopwords():
     stopwords = set()
-    with open('stopwords-cn.txt') as f:
+    with open(os.path.join(module_path, 'stopwords.txt')) as f:
         for line in f:
             stopwords.add(line[:-1])
     return stopwords
